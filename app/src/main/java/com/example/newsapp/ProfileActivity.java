@@ -19,6 +19,11 @@ public class ProfileActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onBackPressed(){
+        Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
+
     public void toNewsScreen(View view){
         Intent intent = new Intent(ProfileActivity.this, MainActivity2.class);
         startActivity(intent);

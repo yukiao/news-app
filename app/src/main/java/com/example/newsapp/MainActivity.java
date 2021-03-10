@@ -15,16 +15,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-//    @Override
-//    public void onBackPressed(){
-//        moveTaskToBack(true);
-//    }
+    @Override
+    public void onBackPressed(){
+        moveTaskToBack(true);
+    }
 
     public void toNewsScreen(View view) {
 
         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
         startActivity(intent);
-        finish();
     }
 
 

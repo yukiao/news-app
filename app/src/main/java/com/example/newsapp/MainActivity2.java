@@ -21,7 +21,11 @@ public class MainActivity2 extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    @Override
+    public void onBackPressed(){
+        Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+        startActivity(intent);
+    }
 
     public void toHomeActivity(View view){
         Intent intent = new Intent(MainActivity2.this, MainActivity.class);
