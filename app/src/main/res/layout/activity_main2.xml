@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="370dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/news_background"
+                android:src="@drawable/news"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/miliardbold"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="20dp"
                 android:text="Tesla Model 3, Model Y orders delayed up to 2 months"
                 android:textColor="@color/white"
                 android:textSize="28dp"
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/miliard"
-                android:paddingHorizontal="20dp"
+                android:paddingHorizontal="30dp"
                 android:text="Tesla hasn't given a reason, but it sure seems like the semiconductor chip shortage has finally hit the automaker."
                 android:textColor="#d3d3d3"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -64,6 +64,8 @@
             android:orientation="vertical"
             >
             <LinearLayout
+                android:layout_gravity="center"
+                android:weightSum="7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -88,6 +90,48 @@
                         android:textColor="@color/white"
                         android:fontFamily="@font/miliard"
                         android:layout_marginLeft="5dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_baseline_access_time_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="2h"
+                        android:textStyle="bold"
+                        android:textColor="#808080"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_baseline_remove_red_eye_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="196"
+                        android:textStyle="bold"
+                        android:textColor="#808080"
                         />
                 </LinearLayout>
             </LinearLayout>
