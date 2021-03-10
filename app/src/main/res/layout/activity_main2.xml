@@ -127,16 +127,19 @@
                 android:textSize="16dp"
                 android:text="Tesla also idled Model 3 production late last month, but did not provide information on why the lines stopped. Last we heard, production wasn't scheduled to restart at the factory in Fremont, California, until March 7. It's not clear if production did resume. Perhaps Tesla will update delivery timelines again if the supply chain works itself out. But right now, Tesla's probably in the same boat as every other company building cars."
                 />
-            <TextView
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/miliard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/link"
-                android:text="@string/hyperlink"
-                android:textColor="@color/black"
-                />
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="toHomeActivity"
+                    android:text="Back To Home Screen"
+                    android:paddingHorizontal="10dp"
+                    />
+
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

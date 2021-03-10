@@ -14,7 +14,6 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        setupHyperlink();
     }
 
     public void toProfile(View view) {
@@ -22,8 +21,11 @@ public class MainActivity2 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void setupHyperlink(){
-        TextView link = findViewById(R.id.link);
-        link.setMovementMethod((LinkMovementMethod.getInstance()));
+
+
+    public void toHomeActivity(View view){
+        Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+        startActivity(intent);
     }
+
 }
