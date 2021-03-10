@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/news_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/miliardbold"
+                android:paddingHorizontal="10dp"
+                android:text="Tesla Model 3, Model Y orders delayed up to 2 months"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.618" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/miliard"
+                android:paddingHorizontal="20dp"
+                android:text="Tesla hasn't given a reason, but it sure seems like the semiconductor chip shortage has finally hit the automaker."
+                android:textColor="#d3d3d3"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.213"
+                tools:layout_editor_absoluteX="0dp" />
+            />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundedimage"
+            android:layout_marginTop="-25dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundedauthor"
+                    android:onClick="toProfile"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/profile_photo"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Yukiao"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/miliard"
+                        android:layout_marginLeft="5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:fontFamily="@font/miliard"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:text="Potential Tesla customers looking to order a new EV met a bummer of a message on both the Model 3 and Model Y's order pages on Monday. The delivery timelines for the electric cars now extend for months, up from the two-to-five week timelines the site showed previously."
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/miliard"
+                android:textSize="16dp"
+                android:text="Tesla has updated the Model 3 delivery timeframe to now read 2-14 weeks. As for the Model Y, its message reads 2-11 weeks. Worst-case scenario, buyers are still looking at a June delivery for a Model 3 and a late May delivery for a Model Y. Ouch."/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/miliard"
+                android:textSize="16dp"
+                android:text="It's not clear why Tesla updated the delivery timeframes. Tesla does not operate a public relations department to field requests for comment. But the auto industry and beyond is currently dealing with a semiconductor chip shortage that's caused a handful of production shutdowns around the world. "/>
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/miliard"
+                android:textSize="16dp"
+                android:text="Tesla also idled Model 3 production late last month, but did not provide information on why the lines stopped. Last we heard, production wasn't scheduled to restart at the factory in Fremont, California, until March 7. It's not clear if production did resume. Perhaps Tesla will update delivery timelines again if the supply chain works itself out. But right now, Tesla's probably in the same boat as every other company building cars."
+                />
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/miliard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/link"
+                android:text="@string/hyperlink"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
